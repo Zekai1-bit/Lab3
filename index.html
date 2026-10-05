@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Two Stories</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Three Photos, Two Stories</h1>
+        <p>Same three photos. Change the order, change the story.</p>
+    </header>
+
+    <main>
+        <div class="story-toggle set-toggle" role="group" aria-label="Choose a cat">
+            <button id="set-kitty-btn" type="button" aria-pressed="true">Kitty</button>
+            <button id="set-num-btn" type="button" aria-pressed="false">Num</button>
+        </div>
+
+        <div class="story-toggle" role="group" aria-label="Choose a story">
+            <button id="story-a-btn" type="button" aria-pressed="true">Story A</button>
+            <button id="story-b-btn" type="button" aria-pressed="false">Story B</button>
+        </div>
+
+        <h2 id="story-title">A Lazy Day</h2>
+
+        <figure id="frame">
+            <img id="story-image" src="images/fluffy_cat.jpg" alt="Kitty sitting on a stack of new books at a bookstall">
+            <figcaption>
+                <span id="story-stage"></span>
+                <p id="story-caption"></p>
+            </figcaption>
+        </figure>
+
+        <div class="controls">
+            <button id="prev-btn" type="button">&larr; Previous</button>
+            <span id="step-counter" aria-live="polite">1 / 3</span>
+            <button id="next-btn" type="button">Next &rarr;</button>
+        </div>
+
+        <p class="hint">Tip: click the photo or use the arrow keys.</p>
+    </main>
+
+    <footer>
+        <p>Author: Zekai Wan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
