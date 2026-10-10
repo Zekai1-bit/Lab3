@@ -62,14 +62,6 @@ button:disabled { opacity: 0.35; cursor: default; }
     background-color: var(--accent);
 }
 
-.set-toggle { margin-bottom: 0.75rem; }
-
-.set-toggle button[aria-pressed="true"] {
-    border-color: var(--dark);
-    color: #ffffff;
-    background-color: var(--dark);
-}
-
 #story-title { font-size: clamp(1.5rem, 4vw, 2.25rem); }
 
 #frame {
@@ -84,13 +76,7 @@ button:disabled { opacity: 0.35; cursor: default; }
     border-radius: 12px;
     background-color: var(--dark);
     cursor: pointer;
-}
-
-.fade { animation: fade-in 0.4s ease; }
-
-@keyframes fade-in {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    transition: opacity 0.25s ease;
 }
 
 figcaption { margin-top: 1rem; }
